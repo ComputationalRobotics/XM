@@ -1,0 +1,24 @@
+{
+  "name": "convex-bundle-adjustment-website",
+  "version": "1.0.0",
+  "description": "This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComputationalRobotics/Convex-Bundle-Adjustment-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComputationalRobotics/Convex-Bundle-Adjustment-Website/issues"
+  },
+  "homepage": "https://github.com/ComputationalRobotics/Convex-Bundle-Adjustment-Website#readme",
+  "dependencies": {
+    "parcel": "^2.13.3"
+  }
+}
