@@ -17,6 +17,15 @@ body {
   font-variant: small-caps;
 }
 
+@import url('https://fonts.cdnfonts.com/css/lmroman10');
+
+.nameshort {
+  font-family: 'Latin Modern Roman', serif;
+  font-variant-caps: small-caps;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
 
 .teaser .hero-body {
   padding-top: 0;
