@@ -10,6 +10,9 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://quadjr.github.io/aframe-gaussian-splatting/index.js"></script>
+  
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -383,21 +386,43 @@
     </div>
     <div class="columns is-vcentered interpolation-panel">
       <div class="column is-3 has-text-centered">
-        <img src="./static/interpolation/start.jpg"
+        <img src="./static/interpolation/replica1/start.jpg"
              class="interpolation-image"
              alt="Interpolate start reference image."/>
         <p>Start Frame</p>
       </div>
-      <div class="column interpolation-video-column has-text-centered">
-        <div id="interpolation-image-wrapper">
+      <div class="column interpolation-video-column has-text-centered" data-folder="replica1">
+        <div id="interpolation-image-wrapper-1">
           Loading...
         </div>
         <input class="slider is-fullwidth is-large is-info"
-               id="interpolation-slider"
+               id="interpolation-slider-1"
                step="1" min="0" max="100" value="0" type="range">
       </div>
       <div class="column is-3 has-text-centered">
-        <img src="./static/interpolation/end.jpg"
+        <img src="./static/interpolation/replica1/end.jpg"
+             class="interpolation-image"
+             alt="Interpolation end reference image."/>
+        <p class="is-bold">End Frame</p>
+      </div>
+    </div>
+    <div class="columns is-vcentered interpolation-panel">
+      <div class="column is-3 has-text-centered">
+        <img src="./static/interpolation/replica2/start.jpg"
+             class="interpolation-image"
+             alt="Interpolate start reference image."/>
+        <p>Start Frame</p>
+      </div>
+      <div class="column interpolation-video-column has-text-centered" data-folder="replica2">
+        <div id="interpolation-image-wrapper-2">
+          Loading...
+        </div>
+        <input class="slider is-fullwidth is-large is-info"
+               id="interpolation-slider-2"
+               step="1" min="0" max="100" value="0" type="range">
+      </div>
+      <div class="column is-3 has-text-centered">
+        <img src="./static/interpolation/replica2/end.jpg"
              class="interpolation-image"
              alt="Interpolation end reference image."/>
         <p class="is-bold">End Frame</p>
@@ -406,6 +431,22 @@
   </div>
 </div>
 </div>
+
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">3DGS Rendering</h2>
+      <div class="content has-text-justified">
+        <p>
+          We show the reconstruction results (left) and imput image (right) of the Replica datasets. The reconsruction result is rendered along the camera trajectory which is shown in the "Reconstrcution" section.
+        </p>
+      </div>
+      <a href="appendix.html" target="_blank">open renderer</a>
+    </div>
+  </div>
+  </div>
+
+
 
 
 <!-- <section class="section" id="BibTeX">
