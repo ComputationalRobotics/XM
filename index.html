@@ -106,12 +106,12 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="./static/XM.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (Coming soon)</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
@@ -378,7 +378,7 @@
     <h2 class="title is-3">Rendered video for SLAM</h2>
     <div class="content has-text-justified">
       <p>
-        We show the reconsruction results (left) and imput image (right) of the Replica datasets.
+        We show the reconstruction results (left) and imput image (right) of the Replica datasets. The reconsruction result is rendered along the camera trajectory which is shown in the "Reconstrcution" section.
       </p>
     </div>
     <div class="columns is-vcentered interpolation-panel">
@@ -388,13 +388,13 @@
              alt="Interpolate start reference image."/>
         <p>Start Frame</p>
       </div>
-      <div class="column interpolation-video-column">
+      <div class="column interpolation-video-column has-text-centered">
         <div id="interpolation-image-wrapper">
           Loading...
         </div>
         <input class="slider is-fullwidth is-large is-info"
                id="interpolation-slider"
-               step="1" min="0" max="150" value="0" type="range">
+               step="1" min="0" max="100" value="0" type="range">
       </div>
       <div class="column is-3 has-text-centered">
         <img src="./static/interpolation/end.jpg"
